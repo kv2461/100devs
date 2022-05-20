@@ -1,0 +1,167 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family:sans-serif;
+  font-size:20px;
+  line-height: 30px;
+}
+
+main,section{
+  float:left;
+}
+
+a{
+  text-decoration: none;
+  color:grey;
+}
+
+ul{
+  list-style-type:none;
+}
+/******************************************
+/* NAV
+/*******************************************/
+nav{
+  position:relative;
+  width:16.6666%;
+  display:flex;
+  flex-direction: column;
+  float:left;
+  line-height:45px;
+  height:100%;
+}
+
+nav img{
+  height:35px;
+  width:70px;
+  position:relative;
+  left:15%;
+}
+
+.crunch{
+  color:orange;
+}
+
+
+/******************************************
+/* MAIN
+/*******************************************/
+
+main{
+  width:50%;
+}
+
+main img{
+  width:100%;
+  height:100%;
+}
+
+main span{
+  display:block;
+}
+
+.section-a{
+  width:33.3333%;
+  padding:0 15px;
+}
+
+.section-a section{
+  border-bottom:1px solid grey;
+}
+
+.section-a section:last-child{
+  border:none;
+}
+
+.section-a h4{
+  font-size:24px;
+  font-weight:900;
+}
+h2{
+  font-size:34px;
+  font-weight:900;
+}
+.section-b{
+  float:left;
+  width:83.3333%;
+}
+
+.section-b img{
+  width:25%;
+  height:25%;
+}
+
+.section-ba{
+  display:flex;
+  flex-direction:row;
+}
+
+.section-ba section{
+  width:33.33%;
+}
+
+@media screen and (max-width:1200px){
+  nav{
+    display:inline-flex;
+    flex-direction: row;
+    line-height:0;
+    width:100%;
+    float:none;
+  }
+  nav ul+ul, nav img{
+    display:none;
+  }
+
+  main,
+  section{
+    float:none;
+    width:100%;
+  }
+  main{
+    display:flex;
+    flex-direction: column;
+  }
+
+  .section-a{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    width:100%;
+  }
+  .section-a section{
+    width:50%;
+    padding:none;
+  }
+  .section-b{
+    width:100%;
+    float:none;
+  }
+  .section-ba{
+    display:flex;
+    flex-direction:column;
+  }
+  .section-ba section{
+    width:100%;
+  }
+}

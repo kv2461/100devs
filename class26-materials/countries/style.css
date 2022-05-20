@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(197, 189, 189);
+}
+
+.countryCoatOfArms {
+  height: 200px;
+}
+ul {
+  list-style-type: none;
+}

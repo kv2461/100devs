@@ -1,0 +1,258 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap');
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+element{
+  --main-bg-color:#081338;
+}
+body {
+  font-size:20px;
+  color:rgb(8, 16, 88);
+  font-family: 'Roboto', sans-serif;
+  line-height:30px;
+}
+
+.main{
+  background-color: #030c14;
+  background-image: -webkit-linear-gradient(94deg, #ffffff 20%, #081338 0%);
+}
+
+a{
+  text-decoration: none;
+  color:grey;
+  font-size:.8rem;
+}
+
+/******************************************
+/* NAV
+/*******************************************/
+nav,
+nav ul{
+  display:flex;
+  flex-direction:row;
+  color:darkgrey;
+  background:transparent;
+}
+
+nav ul{
+  position:relative;
+  left:40%;
+  white-space:nowrap;
+}
+
+nav ul>li{
+  padding-left:5%;
+}
+
+/******************************************
+/* SECTION A
+/*******************************************/
+
+.section-a{
+  padding-top:50px;
+  display:flex;
+  flex-direction:row;
+  color:white;
+}
+
+.section-aa,
+.section-ab{
+  width:50%;
+}
+/******************************************
+/* SOCIAL MEDIA
+/*******************************************/
+
+.smedia{
+  display:flex;
+  flex-direction:row;
+}
+
+.smedia ul{
+  position:relative;
+  left:40%;
+  white-space:nowrap;
+}
+
+.smedia ul img{
+  padding-left:5%;
+}
+/******************************************
+/* SECTION B
+/*******************************************/
+
+.section-b{
+  padding-top:50px;
+  display:flex;
+  flex-direction:row;
+}
+
+.section-ba,
+.section-bb{
+  width:50%;
+}
+
+.section-bb{
+  display:flex;
+}
+
+.section-bb div{
+  width:100%;
+}
+
+/******************************************
+/* SECTION C
+/*******************************************/
+
+.section-c{
+  padding-top:100px;
+  display:flex;
+  flex-direction:row;
+}
+
+.section-ca,
+.section-cb{
+  width:50%;
+}
+
+/******************************************
+/* SECTION D
+/*******************************************/
+
+.section-dtop{
+  padding-top:100px;
+  text-align:center;
+}
+
+.section-d{
+  padding:50px;
+  display:flex;
+  flex-direction:row;
+}
+
+.section-da,
+.section-db{
+  width:50%;
+}
+
+.section-dtop{
+  padding:50px;
+  text-align:center;
+}
+
+/******************************************
+/* SECTION E
+/*******************************************/
+
+.section-e{
+  padding-top:100px;
+}
+
+.section-eb{
+  padding-top:100px;
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.section-eb section{
+  width:33.333%;
+}
+
+/******************************************
+/* SECTION F
+/*******************************************/
+
+.section-f{
+  padding-top:200px;
+  display:flex;
+  flex-direction:row;
+}
+
+.section-fa,
+.section-fb{
+  width:50%;
+}
+
+/******************************************
+/* SECTION G
+/*******************************************/
+
+.section-g{
+  padding-top:200px;
+  text-align:center;
+}
+
+.section-g span{
+  display:inline-block;
+  text-align:center;
+}
+
+.section-g .quote{
+  display:flex;
+  flex-direction: row;
+}
+
+.section-g .quote img{
+  width:20%;
+}
+
+.section-g .quote p{
+  width:60%;
+}
+
+/******************************************
+/* ASIDE
+/*******************************************/
+
+aside{
+  padding-top:100px;
+  display:flex;
+  flex-direction: row;
+}
+
+.aside-left,
+.aside-right{
+  width:50%;
+}
+
+/******************************************
+/* FOOTER
+/*******************************************/
+
+footer{
+  padding-top:50px;
+  display:flex;
+  flex-direction:row;
+}
+
+footer div{
+  width:16.6666%;
+  display:flex;
+  flex-direction:column;
+}
+
+footer .products{
+  width:33.3333%;
+}

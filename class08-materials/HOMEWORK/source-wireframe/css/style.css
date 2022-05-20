@@ -1,0 +1,177 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap');
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-size:20px;
+  color:rgb(8, 16, 88);
+  font-family: 'Roboto', sans-serif;
+  line-height:30px;
+}
+
+a{
+  text-decoration: none;
+  color:rgb(8, 16, 88); 
+}
+
+
+/******************************************
+/* NAV
+/*******************************************/
+nav{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  background:rgba(245,249,251);
+  border:10px solid rgba(245,249,251);
+  padding:0 10px;
+}
+nav h4{
+  font-size:1.5rem;
+  font-weight:700;
+}
+
+nav ul{
+  display:inline-flex;
+  white-space: nowrap; /*takes care of wrap for list items*/
+  width:25%;
+}
+nav li{
+  padding-left:11%;
+}
+nav li:first-child{
+  padding-left:0;
+}
+
+.button{
+  border: 1px solid rgba(8,16,88);
+  padding:0 1%;
+  color:white;
+  background:rgb(8, 16, 88);
+}
+
+/******************************************
+/* SECTION-A
+/*******************************************/
+main{
+  background: rgba(245,249,251);
+}
+.section-a{
+display:flex;
+flex-direction:row;
+justify-content:space-between;
+padding:50px 0;
+}
+.section-ar img{
+  width:100%;
+  height:auto;
+}
+
+.section-al{
+  border:0px solid black;
+  padding:0 50px;
+  width:50%;
+}
+
+h6{
+  font-size:.8rem;
+  color:grey;
+  padding-top:50px;
+  padding-bottom:30px;
+}
+
+h2{
+  font-size:2rem;
+  font-weight:700;
+  padding-bottom:30px;
+}
+button{
+  background:rgb(8, 16, 88);
+  color:white;
+}
+
+input{
+  margin-bottom:20px;
+}
+/******************************************
+/* SECTION-B
+/*******************************************/
+.section-b{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  padding:20px 50px;
+  padding-bottom:50px;
+}
+
+.section-b div{
+  display:block;
+  padding:0 20px;
+}
+
+.section-b div>*{
+  padding-bottom:20px;
+}
+
+.section-b .blink{
+  font-weight:600;
+}
+
+.section-b img{
+  border-radius:100%;
+}
+/******************************************
+/* MEDIA QUERY
+/*******************************************/
+@media screen and (max-width:769px){
+  nav ul, nav a{
+    display:none;
+  }
+  nav{
+    justify-content:center;
+    padding-bottom:40px;
+    border-bottom:2px solid grey;
+  }
+
+
+  .section-a{
+    flex-direction:column;
+    padding-top:20px;
+}
+  .section-al{
+    width:100%;
+    padding-bottom:50px;
+  }
+
+  .section-b{
+    flex-wrap:wrap;
+  }
+  .section-b div{
+    padding-top:15px;
+    padding-bottom:25px;
+    border-bottom:5px solid grey;
+  }
+}

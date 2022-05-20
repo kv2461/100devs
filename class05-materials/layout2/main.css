@@ -1,0 +1,31 @@
+*{
+    box-sizing:border-box;
+}
+
+header,footer,article{
+    clear:both;
+}
+
+header,footer{
+    height:100px;
+    border:3px solid black;
+}
+
+article{
+    height:150px;
+    border:3px solid black;
+}
+
+section{
+    width:40%;
+    height:200px;
+    border:3px solid black;
+    float:left;
+}
+
+div{
+    width:60%;
+    height:200px;
+    border:3px solid black;
+    float: left;
+}

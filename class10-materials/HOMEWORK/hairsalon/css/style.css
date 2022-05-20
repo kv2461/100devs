@@ -1,0 +1,343 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Mulish&display=swap');
+body {
+  font-family: 'Cinzel', serif;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+h3{
+  font-size:3rem;
+  line-height:70px;
+}
+
+
+/******************************************
+/* NAV
+/*******************************************/
+/* nav{
+  display:flex;
+  flex-direction: row;
+  white-space:nowrap;
+  padding:2% 5%;
+  justify-content:space-between;
+}
+
+nav ul{
+  display:flex;
+  flex-direction:row;
+  white-space:nowrap;
+}
+
+nav ul{
+  padding-left:17%;
+}
+
+nav ul li+li{
+  padding-left:20px;
+}
+*/
+nav img{
+  height:5%;
+  width:5%;
+}
+/*
+nav>a{
+  padding-left:15%;
+} */
+
+nav, nav ul{
+  display:flex;
+  justify-content:space-around;
+}
+
+nav ul{
+  flex-basis:50%;
+}
+/******************************************
+/* MAIN
+/*******************************************/
+
+main{
+  display:flex;
+  flex-direction:column;
+  padding:15% 7% 0 7%;
+  background-image:url("mainbg.jpg");
+  background-size:auto 100%;
+  color:white;
+}
+
+main h2{
+  font-size:7rem;
+  font-weight:100;
+}
+
+main h6{
+  padding-top:3%;
+  font-size:1.1rem;
+  letter-spacing:5px;
+  padding-bottom:3%;
+}
+
+main>a{
+  border:1px solid black;
+  background:black;
+  color:white;
+  text-align:center;
+  padding:20px 0 20px 0;
+  width:180px;
+  white-space:nowrap;
+}
+main>div>a{
+  color:white;
+}
+main>div{
+  margin-top:5%;
+  border:1px solid black;
+  background:black;
+  color:white;
+  width:290px;
+  line-height:30px;
+  padding-left:30px;
+  padding-top:2%;
+  padding-bottom:3%;
+}
+main>div p{
+  padding-top:5%;
+  padding-bottom:20%;
+}
+main>div span{
+  font-size:2rem;
+  font-weight:700;
+}
+
+main>div>a:last-of-type{
+  border:1px solid white;
+  color:black;
+  background:white;
+  text-align: center;
+  padding:20px;
+}
+
+/******************************************
+/* SECTION-A
+/*******************************************/
+
+.section-a{
+  display:flex;
+  flex-direction:row;
+  padding:10% 10%;
+}
+
+.section-a section{
+  display:flex;
+  flex-direction:column;
+  width:33.33%;
+  text-align:center;
+}
+
+.section-a img{
+  width:17%;
+  height:45%;
+  margin:0 auto;
+}
+
+.section-a h5{
+  font-size:1.2rem;
+  font-weight:600;
+  padding-top:5%;
+}
+
+.section-a p{
+  font-weight:300;
+  line-height:30px;
+  padding:5% 10%;
+}
+
+/******************************************
+/* SECTION-B
+/*******************************************/
+
+.section-b{
+  display:flex;
+  flex-direction:row;
+  padding:5% 10%;
+  background:rgb(224, 224, 224);
+}
+
+.section-ba{
+  padding-right:5%;
+}
+
+.section-ba p{
+  padding-right:5%;
+  line-height:35px;
+  padding-top:5%;
+  padding-bottom:10%;
+}
+
+.section-ba a{
+  border:1px solid rgb(5, 5, 34);
+  background:rgb(5,5,34);
+  color:white;
+  margin:0 auto;
+  padding:20px;
+}
+
+.section-bb video{
+  position:relative;
+}
+
+/******************************************
+/* SECTION-C
+/*******************************************/
+
+.section-c{
+  display:flex;
+  flex-direction:row;
+  padding:15% 10%;
+  justify-content:space-between;
+  padding-bottom:10%;
+}
+
+.section-c div{
+  border:1px solid black;
+  color:white;
+  background:black;
+  text-align:center;
+  width:80%;
+  margin:0 auto;
+  line-height:30px;
+  padding:10px 0;
+  position:relative;
+  bottom: 40px;
+}
+
+.section-c h4{
+  font-size:1.1rem;
+  font-weight:700;
+}
+
+.section-c span{
+  font-size:.8rem;
+  font-weight:100;
+}
+
+/******************************************
+/* SECTION-D
+/*******************************************/
+
+.section-d div{
+  background-image:url(banner.jpg);
+  padding:10% 10%;
+  line-height:50px;
+}
+
+.section-d{
+  padding:0 10%;
+}
+
+.section-d p{
+  font-weight:700;
+}
+
+.section-d .d{
+  font-weight:100;
+  font-size:1.8rem;
+}
+
+.section-d .d span{
+  font-weight:900;
+  font-size:2rem;
+}
+
+.section-d a{
+  border:1px solid black;
+  background:black;
+  color:white;
+  padding: 20px;
+  position:relative;
+  top:40px;
+}
+
+/******************************************
+/* SECTION-E
+/*******************************************/
+
+
+.section-e{
+  text-align:center;
+  padding:10% 10%;
+}
+.section-e h5{
+  font-size:3rem;
+  position:relative;
+  bottom: 10px;
+  letter-spacing:-5px;
+}
+
+.section-e .grid{
+  padding-top:2%;
+  display:grid;
+  grid-template-rows:1fr 1fr 1fr;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-areas:"a b c"
+                      "d b e"
+                      "d f e";
+}
+
+.section-e .grid>img{
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  padding:3%;
+}
+
+#img1{
+  grid-area: a;
+  
+}
+
+#img2{
+  grid-area: b;
+}
+
+#img3{
+  grid-area:c;
+}
+
+#img4{
+  grid-area:d;
+}
+
+#img5{
+  grid-area:e;
+}
+
+#img6{
+  grid-area:f;
+}

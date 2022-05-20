@@ -1,0 +1,208 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+  body {
+    background:white;
+    font-size:14px;
+  }
+  
+  
+  /******************************************
+  /* HEADER
+  /*******************************************/
+header nav{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    padding-right:5%;
+}
+
+header nav ul{
+    display:flex;
+    flex-direction:row;
+    list-style:none;
+}
+
+header div{
+    padding:10% 15% 3% 15%;
+    text-align:center;
+}
+header a{
+    color:white;
+    text-decoration:none;
+}
+
+header span{
+    display:block;
+    margin-top:30%;
+    margin-bottom:0;
+    color:rgba(13, 13, 97, 100);
+}
+
+header{
+    background: rgb(84, 103, 131);
+    color:white;
+}
+nav li:first-child{
+    padding-right:5px;
+}
+h2{
+    font-size:2.3em;
+}
+  /******************************************
+  /* WHITE SECTION
+  /*******************************************/
+
+section p{
+    padding-bottom:10px;
+}
+
+.white
+{
+    text-align:center;
+    padding:10% 25%;
+}
+
+.white a{
+    text-decoration:none;
+    border:2px solid black;
+    padding:2% 4%;
+    color:black;
+}
+
+h3{
+    font-size: 1.5em;
+}
+  /******************************************
+  /* GREY SECTION
+  /*******************************************/
+.grey{
+    text-align:center;
+    background:rgba(245, 245, 245, 0.767);
+    padding:10% 10%;
+    height:30rem;
+}
+.grey article{
+    float:left;
+    width:50%;
+}
+
+.grey div{
+    width:15rem;
+    height:10rem;
+    background:rgb(55, 73, 100);
+    margin:0 auto;
+}
+
+.grey a{
+    text-decoration:none;
+    color:black;
+    border:2px solid black;
+    padding:2% 4%;
+}
+
+@media screen and (max-width:900px){
+    .grey article{
+        width:100%;
+        clear:both;
+        margin-top:10%;
+        margin-bottom:10%;
+    }
+    .grey article:last-child{
+        margin-top:20%;
+        margin-bottom:5%;
+    }
+
+    .grey{
+        height:60rem;
+    }
+}
+
+
+  /******************************************
+  /* FOOTER
+  /*******************************************/
+  
+  footer{
+      background:black;
+      color:white;
+  }
+
+  footer a{
+      color:white;
+      text-decoration:none;
+  }
+
+  footer h5{
+      color:grey;
+      padding:0 20%;
+  }
+
+  .footer-top>*{
+      width:25%;
+  }
+  .footer-top{
+      display:flex;
+      justify-content:space-between;
+  }
+
+  .sitemap ul,
+  .contribute ul,
+  .contact ul{
+      display:flex;
+      flow-direction:row;
+      justify-content:space-between;
+      list-style:none;
+  }
+
+  .footer-ident,.address{
+      flow-direction:row;
+      justify-content:space-between;
+      list-style:none;
+  }
+
+  .address{
+      color:grey;
+  }
+
+  .footer-bottom{
+      border-top:2px solid white;
+      padding:5%;
+      display:flex;
+      justify-content:space-between;
+  }
+
+  @media screen and (max-width:900px){
+      .footer-top>*{
+          width:40%;
+      }
+  }
+  @media screen and (max-width:530px){
+      .footer-top>*{
+          width:50%;
+      }
+      footer{
+          font-size:10px;
+      }
+  }
+  

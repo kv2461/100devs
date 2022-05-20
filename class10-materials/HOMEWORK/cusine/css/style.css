@@ -1,0 +1,294 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+span{
+  color:orange;
+  font-size:1.1rem;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+h3{
+  font-size:3rem;
+  font-weight:700;
+}
+
+.fa-brands{
+  color:orange;
+}
+
+.fa-regular{
+  color:orange;
+  padding-top:3%;
+  font-size:2rem;
+}
+
+.fa-searchengin{
+  color:black;
+}
+/******************************************
+/* MAIN
+/*******************************************/
+main{
+  background-image:url("mainbg.png");
+  background-size:100% auto;
+  height:30rem;
+  padding:2%;
+}
+
+nav,
+nav ul,
+.section-a ul{
+  display:flex;
+  flex-direction: row;
+}
+
+nav ul{
+  padding-left:50%;
+}
+
+nav ul li+li{
+  padding-left:20px;
+  white-space: nowrap;
+}
+
+main h2{
+  font-size:5rem;
+  font-weight:700;
+  padding-top:7%;
+}
+
+
+main .section-a{
+  width:60%;
+  padding:0 7%;
+}
+
+.section-a{
+  display:flex;
+  flex-direction: column;
+}
+
+.section-a div{
+  padding-top:6%;
+  display:flex;
+  flex-direction:row;
+}
+
+.section-a input{
+  width:70%;
+}
+
+.section-a button{
+  background:orange;
+  color:white;
+}
+
+.section-a ul{
+  padding-top:6%;
+}
+
+.section-a ul li+li{
+  padding-left:7%;
+}
+
+/******************************************
+/* SECTION-B
+/*******************************************/
+
+.section-b{
+  padding-top:5%;
+  display:flex;
+  flex-direction:row;
+  height:30rem;
+}
+
+.section-ba{
+  width:40%;
+}
+
+.section-bb{
+  width:60%;
+  background-image:url("sectionbg.png");
+  background-size:100% auto;
+}
+
+.section-bb>*{
+  padding-right:35%;
+}
+
+.section-bb h3,
+.section-bb p,
+.section-bb div{
+  padding-top:2%;
+}
+
+.section-ba img{
+  height:100%;
+  width:80%;
+}
+
+/******************************************
+/* SECTION-C
+/*******************************************/
+.section-c>span{
+  padding-top:5%;
+}
+.section-c{
+  height:auto;
+  display: flex;
+  flex-direction: column;
+  text-align:center;
+}
+
+.section-c .images{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+  padding:0 15%;
+}
+
+.section-c .images img{
+  width:25%;
+  padding:2% 2%;
+}
+
+.section-c ul{
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  padding-top:2%;
+  padding-bottom:2%;
+  border-bottom:1px solid grey;
+}
+.section-c h3{
+  padding-top:1%;
+}
+.section-c ul li+li{
+  padding-left:5%;
+}
+
+/******************************************
+/* SECTION-D
+/*******************************************/
+
+.section-d{
+  display:flex;
+  flex-direction: column;
+  text-align:center;
+}
+
+.section-d>span{
+  padding-top:2%;
+}
+
+.section-d h3{
+  padding-top:1%;
+}
+
+.section-d img{
+  padding:2% 12%;
+}
+
+.section-d .schedule{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  padding:2% 15%;
+}
+
+
+.section-d .time,
+.section-d .black{
+  color:black;
+  display:block;
+}
+
+.section-d .number{
+  font-size:2rem;
+  font-weight:700;
+}
+
+
+/******************************************
+/* CUSTOMERS
+/*******************************************/
+
+.customers{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height:40rem;
+}
+
+.customers span:first-of-type{
+  padding-top:5%;
+}
+
+.customers h3{
+  padding-top:1%;
+  padding-bottom:3%;
+}
+
+.customers p:last-of-type{
+  font-style: italic;
+  padding:0 15%;
+  line-height:20px;
+  padding-top:2%;
+}
+
+.customers ul{
+  display:flex;
+  flex-direction: row;
+  color:orange;
+  justify-content: center;
+  padding-top:1%;
+}
+
+.customers p{
+  padding-top:.5%;
+}
+
+.customers .person{
+  padding-top:2%;
+  color:black;
+  font-weight:700;
+  font-size:1.5rem;
+}
+
+.customers img{
+  width:10%;
+  height:20%;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:50% 50%;
+}
